@@ -1,5 +1,5 @@
 import { Card, CardContent, Container, TemplatesButton, Title } from "./style"
-import salao from "../../assets/img/salao.png"
+import barbearia from "../../assets/img/barbearia.png"
 import pizzaria from "../../assets/img/Pizzaria.png"
 import Academia from "../../assets/img/academia.png"
 import arquitetura from "../../assets/img/arquitetura.png"
@@ -22,7 +22,7 @@ export const Templates = () => {
             category: 'Beleza & Estética',
             name: "Template 1",
             description: "Descrição do Template 1",
-            image: salao,
+            image: barbearia,
         },
         {
             id: 2,

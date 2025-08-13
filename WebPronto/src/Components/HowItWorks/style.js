@@ -2,9 +2,8 @@ import styled from "styled-components"
 
 export const Container = styled.section`
     width: 100%;
-    max-width: 1200px;
-    margin: 80px auto;
-    padding: 0 20px;
+    margin-top: 80px;
+    padding: 20px 20px;
     text-align: center;
 
     p {

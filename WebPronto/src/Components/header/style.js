@@ -29,6 +29,7 @@ export const HeaderContent = styled.div`
         color: ${props => props.theme.colors.light};
         background: linear-gradient(to left, ${props => props.theme.colors.primary}, #79baffff ) ; 
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 

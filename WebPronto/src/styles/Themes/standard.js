@@ -10,7 +10,7 @@ export const standardTheme = {
         dark: '#2d3338ff',
         white: '#ffffff',
         lightBlue: '#98caffff',
-        strongPrimary: '#476ee0',
+        strongPrimary: '#7547e0ff',
         strongWarning: '#d17600ff',
         strongInfo: '#0f6f8fff',
         strongSuccess: '#3fe265ff',

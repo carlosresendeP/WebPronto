@@ -30,7 +30,7 @@ export const HowItWorks = () => {
             id: 3,
             icon: <Zap size={40} />,
             title: "Receba seu site",
-            description: "Em até 3 dias úteis, você recebe seu site personalizado e pronto para usar."
+            description: "Em até 10 dias úteis, você recebe seu site personalizado e pronto para usar."
         }
     ]
 
@@ -55,7 +55,7 @@ export const HowItWorks = () => {
 
             <Guarantee>
                 <Zap size={20} />
-                Entrega garantida em até 3 dias úteis!
+                Entrega garantida em até 10 dias úteis!
             </Guarantee>
         </Container>
     )

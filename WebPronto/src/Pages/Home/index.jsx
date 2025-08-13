@@ -1,8 +1,11 @@
 
 import { Button } from "../../Components/button"
+import { CTA } from "../../Components/CTA"
+import { Footer } from "../../Components/Footer"
 import { Header } from "../../Components/header"
 import { HowItWorks } from "../../Components/HowItWorks"
 import { Templates } from "../../Components/Templates"
+import { Testimonials } from "../../Components/Testimonials"
 import { Container, ContainerHome, GroupButton, GroupCards, HomeButton, HomeContent, MainContainer } from "./styles"
 
 export const Home = () => {
@@ -42,7 +45,13 @@ export const Home = () => {
                     </Templates>
 
                     <HowItWorks />
+
+                    <Testimonials />
                 </Container>
+
+                <CTA />
+
+                <Footer />
             </MainContainer>
 
         </div>

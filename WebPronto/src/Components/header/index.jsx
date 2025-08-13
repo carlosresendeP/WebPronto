@@ -29,6 +29,7 @@ export const Header = () =>{
                             <a href="#Home">Inicio</a>
                             <a href="#Templates">Modelos</a>
                             <a href="#works">Como Funciona</a>
+                            <a href="#testimonials">Depoimentos</a>
                             <Button>Fale Comigo</Button>
                         </NavHeader>
                         <ButtonMenu 

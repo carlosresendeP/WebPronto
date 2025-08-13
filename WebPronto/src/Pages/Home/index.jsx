@@ -21,8 +21,8 @@ export const Home = () => {
                             <p>Escolha seu modelo, envie os dados e receba seu site em até <span>10 dias</span></p>
 
                             <GroupButton>
-                                <HomeButton>Ver Modelos Prontos</HomeButton>
-                                <HomeButton>Como Funciona</HomeButton>
+                                <HomeButton href="#Templates" >Ver Modelos Prontos </HomeButton>
+                                <HomeButton href="#works">Como Funciona</HomeButton>
                             </GroupButton>
 
                             <GroupCards>

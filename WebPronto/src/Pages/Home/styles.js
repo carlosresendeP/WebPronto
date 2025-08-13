@@ -23,14 +23,19 @@ export const ContainerHome = styled.main`
 `
 
 export const HomeContent = styled.div`
-    max-width: 600px;
+    max-width: 800px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 40px;
 
+    @media (max-width: 768px) {
+        margin-top: 20px;
+        max-width: 100%;
+    }
 
     h2{
         font-size: 58px;
@@ -73,10 +78,15 @@ export const GroupButton = styled.div`
     justify-content: center;
     gap: 20px;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+    }
+
 
 `
 
-export const HomeButton = styled(Button)`
+export const HomeButton = styled.a`
     position: relative;
     background: linear-gradient(to left, 
         ${props => props.theme.colors.primary},
@@ -91,6 +101,8 @@ export const HomeButton = styled(Button)`
     z-index: 1;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
     
     &::before {
         content: '';
@@ -133,6 +145,13 @@ export const HomeButton = styled(Button)`
     & > * {
         position: relative;
         z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 13px;
     }
 `
 

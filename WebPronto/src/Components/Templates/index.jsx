@@ -1,6 +1,6 @@
 import { Card, CardContent, Container, TemplatesButton, Title } from "./style"
 import salao from "../../assets/img/salao.png"
-import Pizzaria from "../../assets/img/pizzaria.png"
+import pizzaria from "../../assets/img/Pizzaria.png"
 import Academia from "../../assets/img/academia.png"
 import arquitetura from "../../assets/img/arquitetura.png"
 import {SquareArrowOutUpRight } from "lucide-react"
@@ -36,7 +36,7 @@ export const Templates = () => {
             category: 'Restaurantes',
             name: "Template 3",
             description: "Descrição do Template 3",
-            image: Pizzaria
+            image: pizzaria
         },
         {
 

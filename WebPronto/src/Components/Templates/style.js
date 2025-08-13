@@ -15,7 +15,7 @@ export const Container = styled.div`
 
 `
 export const TemplatesButton = styled(Link)`
-    background: radial-gradient(circle at 50% 50%, ${props => props.theme.colors.primary}, #98caffff);
+    background-color: ${props => props.theme.colors.primary};
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -26,11 +26,13 @@ export const TemplatesButton = styled(Link)`
     text-align: center;
     width: 50%;
     margin-top: 20px;
+    transition: all 0.3s, color 0.3s;
 
 
     &:hover{
-        background: linear-gradient(to left, ${props => props.theme.colors.strongPrimary}, #98caffff ) ; 
+        background-color: ${props => props.theme.colors.strongSuccess}; 
         color: ${props => props.theme.colors.light};
+        transform: translateY(-2px);
     }
 `
 

@@ -6,7 +6,7 @@ export const Router = () => {
     return (
         <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Alltemplates" element={<AllTemplates />} />
+        <Route path="/Templates" element={<AllTemplates />} />
         </Routes>
     )
 }

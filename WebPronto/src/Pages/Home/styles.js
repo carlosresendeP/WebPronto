@@ -1,28 +1,56 @@
 import styled from "styled-components";
-import { Button } from "../../Components/button";
+
 
 export const MainContainer = styled.div`
     width: 100%;
   
     background-color: ${props => props.theme.colors.light};
+
+
 `
-
-
 export const Container = styled.div`
-    max-width: 1280px;
+    width: 1280px;
     margin: 0 auto;
-    padding: 0 20px;
 `
-export const ContainerHome = styled.main`
-
+export const ImageView = styled.div`
+    position: absolute;
+    left: 0;
     width: 100%;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(0.5);
+
+    z-index: 1;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(38, 30, 65, 0.34);
+        z-index: 1;
+    }
+`
+
+
+export const ContainerHome = styled.main`
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: relative;
+    z-index: 2;
+    
 `
 
 export const HomeContent = styled.div`
+    position: absolute;
+    z-index: 3;
+    padding: 20px;
     max-width: 800px;
     min-height: 100vh;
     display: flex;
@@ -41,7 +69,7 @@ export const HomeContent = styled.div`
         font-size: 58px;
         font-weight: 700;
         margin-bottom: 16px;
-        color: ${props => props.theme.colors.dark};
+        color: ${props => props.theme.colors.light};
         text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.11);
 
         span{
@@ -64,7 +92,7 @@ export const HomeContent = styled.div`
         font-size: 15px;
         font-weight: 400;
         margin-bottom: 16px;
-        color: ${props => props.theme.colors.secondary};
+        color: ${props => props.theme.colors.light};
 
         span{
             color: ${props => props.theme.colors.info};
@@ -179,7 +207,7 @@ export const GroupCards = styled.div`
             flex-direction: column;
 
             span{
-                color: ${props => props.theme.colors.dark};
+                color: ${props => props.theme.colors.light};
                 font-size: 14px;
                 font-weight: 400;            
                 margin-top: 8px;

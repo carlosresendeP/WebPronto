@@ -23,14 +23,14 @@ export const Header = () =>{
                             <p>Templates de sites</p>
                         </GroupLogo>
                         <NavHeader
-                        isMenuOpen={isMenuOpen}
+                        $isMenuOpen={isMenuOpen}
                         >
                     
                             <a href="#Home">Inicio</a>
                             <a href="#Templates">Modelos</a>
                             <a href="#works">Como Funciona</a>
                             <a href="#testimonials">Depoimentos</a>
-                            <Button>Fale Comigo</Button>
+                            <a href="#cta"><Button>Fale Comigo</Button></a>
                         </NavHeader>
                         <ButtonMenu 
                         

@@ -13,7 +13,7 @@ export const Card = styled.div`
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;  
     padding: 20px;
 
@@ -31,7 +31,7 @@ export const Card = styled.div`
         display: flex;
         flex-direction: column;
         align-items: start;
-        justify-content: center;
+        justify-content: space-between;
 
         
         img {
@@ -60,6 +60,16 @@ export const Card = styled.div`
             p {
                 margin: 5px 0;
                 color: ${props => props.theme.colors.secondary};
+            }
+
+            h2{
+                color: #e74c3c;
+                font-size: 15px;
+                width: 100%;
+                margin-top: 10px;
+                padding: 10px 20px;
+                
+                text-align: center;
             }
 
 

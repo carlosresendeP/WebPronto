@@ -6,7 +6,7 @@ import { Header } from "../../Components/header"
 import { HowItWorks } from "../../Components/HowItWorks"
 import { Templates } from "../../Components/Templates"
 import { Testimonials } from "../../Components/Testimonials"
-import { Container, ContainerHome, GroupButton, GroupCards, HomeButton, HomeContent, MainContainer } from "./styles"
+import { Container, ContainerHome, GroupButton, GroupCards, HomeButton, HomeContent, ImageView, MainContainer } from "./styles"
 
 export const Home = () => {
 
@@ -14,8 +14,13 @@ export const Home = () => {
         <div>
             <MainContainer>
                 <Header ></Header>
+
+                <ImageView>
+
+                </ImageView>
                 <Container id='Home'>
                     <ContainerHome>
+
                         <HomeContent>
                             <h2>Sites Prontos Para seu <span>Négocio Local</span></h2>
                             <p>Escolha seu modelo, envie os dados e receba seu site em até <span>10 dias</span></p>

@@ -1,8 +1,9 @@
-import { Card, CardContent, Container, TemplatesButton, Title } from "./style"
+import { Card, Container, TemplatesButton, TemplatesGrid, Title } from "./style"
 
 import {SquareArrowOutUpRight } from "lucide-react"
 import { Button } from "../button"
-import  models from "../../data/allModels" 
+import { CardModel } from "../CardModel/CardModel"
+
 
 
 export const Templates = () => {
@@ -13,7 +14,6 @@ export const Templates = () => {
     //depois serão puxados de uma API ou algo do tipo
 
     
-
     return(
         <div>
             <Container id="Templates">
@@ -22,27 +22,15 @@ export const Templates = () => {
                  </Title>
 
                  <Card>
-                    <CardContent>
-                        {models.map((model) => (
-                            <div className="CardContents" key={model.id}>
-                                <img src={model.image} alt={model.name} />
-                                <div className="CardTexts">
-                                    <span>{model.category}</span>
-                                    <h3>{model.name}</h3>
-                                    <p>{model.description}</p>
-                                    <Button >Ver Modelo <SquareArrowOutUpRight /></Button>
-                                </div>
-                            </div>
-                        ))}
-
-                    </CardContent>
+                    <TemplatesGrid >
+                        <CardModel limit={3} />
+                    </TemplatesGrid>
                  </Card>
  
                 <TemplatesButton to="/templates">
                     Ver Mais Modelos
                 </TemplatesButton>
 
-                 
             </Container>
         </div>
     )

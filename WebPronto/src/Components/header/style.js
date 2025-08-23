@@ -75,7 +75,7 @@ export const NavHeader = styled.nav`
     @media (max-width: 768px) {
         display: none;
         //validação para abrir o menu responsivo
-        display: ${props => props.isMenuOpen ? 'flex' : 'none'};
+        display: ${props => props.$isMenuOpen ? 'flex' : 'none'};
         flex-direction: column;
         justify-content: start;
         align-items: center;

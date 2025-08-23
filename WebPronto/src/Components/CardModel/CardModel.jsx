@@ -4,9 +4,10 @@ import models from "../../data/allModels"
 import { Button } from "../button"
 import { Card, Container, EmptyState } from "./style"
 
-export const CardModel = ({ activeFilter, searchTerm, viewMode }) => {
 
-    console.log(activeFilter, searchTerm, viewMode)
+export const CardModel = ({ activeFilter, searchTerm, viewMode, limit }) => {
+
+    
 
     // Filtrar modelos baseado no filtro ativo e termo de busca
     const filteredModels = useMemo(() => {
@@ -52,18 +53,25 @@ export const CardModel = ({ activeFilter, searchTerm, viewMode }) => {
     return (
         <Container>
             <Card $viewMode={viewMode}>
-                {filteredModels.map((model) => (
-                <div className="CardContents" 
-                key={model.id}
-                >
-                    <img src={model.image} alt={model.name} />
-                    <div className="CardTexts">
-                        <span>{model.category}</span>
-                        <h3>{model.name}</h3>
-                        <p>{model.description}</p>
-                        <Button>Ver Modelo <SquareArrowOutUpRight /></Button>
+                {(limit ? filteredModels.slice(0, limit) : filteredModels).map((model) => (
+                    <div className="CardContents" 
+                        key={model.id}
+                    >
+                        <img src={model.image} alt={model.name} />
+                        <div className="CardTexts">
+                            <span>{model.category}</span>
+                            <h3>{model.name}</h3>
+                            <p>{model.description}</p>
+
+                            {model.link ? (
+                                <Button onClick={() => window.open(model.link, '_blank')}>
+                                    Ver Modelo de Página<SquareArrowOutUpRight />
+                                </Button>
+                            ) : (
+                                <h2>Página não disponível</h2>
+                            )}
+                        </div>
                     </div>
-                </div>
                 ))}
             </Card>
         </Container>

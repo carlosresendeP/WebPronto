@@ -47,9 +47,9 @@ export const Footer = () => {
 
 
                         </ContactItem>
-                        <ContactItem href="mailto:contato@webpronto.com.br">
+                        <ContactItem href="mailto:dev.carlosresende@hotmail.com">
                             <Mail size={16} />
-                            contato@webpronto.com.br
+                            dev.carlosresende@hotmail.com
                         </ContactItem>
                         <ContactItem>
                             <MapPin size={16} />

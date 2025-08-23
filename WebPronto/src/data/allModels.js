@@ -10,6 +10,7 @@ const models = [
         name: "Template 1",
         description: "Descrição do Template 1",
         image: barbearia,
+        link: "https://barberdev-ten.vercel.app/"
     },
     {
         id: 2,

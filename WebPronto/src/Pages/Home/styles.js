@@ -9,27 +9,33 @@ export const MainContainer = styled.div`
 
 `
 export const Container = styled.div`
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
+    padding: 0 20px;
+    
+    @media (max-width: 768px) {
+        padding: 0 16px;
+    }
 `
+
 export const ImageView = styled.div`
     position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
     filter: brightness(0.5);
-
     z-index: 1;
+    
     &::after {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background: rgba(38, 30, 65, 0.34);
         z-index: 1;
     }
@@ -39,12 +45,16 @@ export const ImageView = styled.div`
 export const ContainerHome = styled.main`
     width: 100%;
     height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 2;
     
+    @media (max-width: 768px) {
+        padding: 0 16px;
+    }
 `
 
 export const HomeContent = styled.div`

@@ -59,20 +59,24 @@ export const ContainerHome = styled.main`
 
 export const HomeContent = styled.div`
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: 3;
     padding: 20px;
     max-width: 800px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    text-align: center;
+    text-align: start;
     margin-top: 40px;
 
     @media (max-width: 768px) {
         margin-top: 20px;
         max-width: 100%;
+        text-align: center;
+        align-items: center;
     }
 
     h2{

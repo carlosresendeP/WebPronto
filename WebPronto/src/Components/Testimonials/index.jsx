@@ -21,10 +21,10 @@ export const Testimonials = () => {
         {
             id: 1,
             rating: 5,
-            text: "Meu site ficou incrível! Em 3 dias estava online e já comecei a receber pedidos pelo WhatsApp. Recomendo muito o WebPronto!",
-            clientName: "Maria Silva",
-            business: "Pizzaria Don Mario",
-            avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face&auto=format"
+            text: "Meu site ficou incrível! Em 5 dias estava online e já comecei a receber pedidos pelo WhatsApp. Recomendo muito o WebPronto!",
+            clientName: "Maria",
+            business: "Pizzaria Dona Maria",
+            avatar: "https://images.unsplash.com/photo-1592621385612-4d7129426394?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bXVsaGVyfGVufDB8fDB8fHww"
         },
         {
             id: 2,

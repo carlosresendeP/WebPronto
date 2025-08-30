@@ -4,6 +4,7 @@ import { CTA } from "../../Components/CTA"
 import { Footer } from "../../Components/Footer"
 import { Header } from "../../Components/header"
 import { HowItWorks } from "../../Components/HowItWorks"
+import { Plans } from "../../Components/Plans"
 import { Templates } from "../../Components/Templates"
 import { Testimonials } from "../../Components/Testimonials"
 import { Container, ContainerHome, GroupButton, GroupCards, HomeButton, HomeContent, ImageView, MainContainer } from "./styles"
@@ -23,7 +24,7 @@ export const Home = () => {
 
                         <HomeContent>
                             <h2>Sites Prontos Para seu <span>Négocio Local</span></h2>
-                            <p>Escolha seu modelo, envie os dados e receba seu site em até <span>10 dias</span></p>
+                            <p>Transforme sua presença online em até <span>10 dias</span> com um site profissional pronto para atrair clientes. </p>
 
                             <GroupButton>
                                 <HomeButton href="#Templates" >Ver Modelos Prontos </HomeButton>
@@ -50,6 +51,8 @@ export const Home = () => {
                     </Templates>
 
                     <HowItWorks />
+
+                    <Plans />
 
                     <Testimonials />
                 </Container>

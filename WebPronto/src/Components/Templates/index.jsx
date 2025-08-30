@@ -1,19 +1,21 @@
-import { Card, Container, TemplatesButton, TemplatesGrid, Title } from "./style"
-
+import { Card, Container, TemplatesButton, TemplatesGrid, Title, FilterSection, FilterRow, FilterButtons, FilterButton } from "./style"
+import { useState } from "react"
 import {SquareArrowOutUpRight } from "lucide-react"
 import { Button } from "../button"
 import { CardModel } from "../CardModel/CardModel"
 
-
-
 export const Templates = () => {
+    const [activeFilter, setActiveFilter] = useState('Todos')
 
-    //const navigate = useNavigate()
+    const categories = [
+        'Todos',
+        'Beleza & Estética', 
+        'Saúde',
+        'Restaurantes',
+        'Serviços',
+        'E-commerce'
+    ]
 
-    //templates ficam aqui por enquanto
-    //depois serão puxados de uma API ou algo do tipo
-
-    
     return(
         <div>
             <Container id="Templates">
@@ -21,9 +23,28 @@ export const Templates = () => {
                     <span>Escolha o modelo que melhor se adapta ao seu tipo de negócio</span>
                  </Title>
 
+                 <FilterSection>
+                    <FilterRow>
+                        <FilterButtons>
+                            {categories.map((category) => (
+                                <FilterButton
+                                    key={category}
+                                    $active={activeFilter === category}
+                                    onClick={() => setActiveFilter(category)}
+                                >
+                                    {category}
+                                </FilterButton>
+                            ))}
+                        </FilterButtons>
+                    </FilterRow>
+                </FilterSection>
+
                  <Card>
                     <TemplatesGrid >
-                        <CardModel limit={3} />
+                        <CardModel 
+                            limit={3} 
+                            activeFilter={activeFilter}
+                        />
                     </TemplatesGrid>
                  </Card>
  

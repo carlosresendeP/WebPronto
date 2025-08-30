@@ -59,3 +59,60 @@ export const Card = styled.div`
 export const TemplatesGrid = styled.section`
 
 `
+
+export const FilterSection = styled.div`
+    width: 100%;
+    margin: 30px 0 40px 0;
+    
+    @media (max-width: 768px) {
+        margin: 20px 0 30px 0;
+    }
+`
+
+export const FilterRow = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+    @media (max-width: 768px) {
+        gap: 12px;
+    }
+`
+
+export const FilterButtons = styled.div`
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    @media (max-width: 768px) {
+        gap: 8px;
+    }
+`
+
+export const FilterButton = styled.button`
+    padding: 10px 20px;
+    border: 2px solid ${props => props.$active ? props.theme.colors.primary : '#e9ecef'};
+    background: ${props => props.$active ? props.theme.colors.primary : 'transparent'};
+    color: ${props => props.$active ? props.theme.colors.white : props.theme.colors.secondary};
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    
+    &:hover {
+        border-color: ${props => props.theme.colors.primary};
+        background: ${props => props.$active ? props.theme.colors.strongPrimary : props.theme.colors.primary};
+        color: ${props => props.theme.colors.white};
+        transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+`

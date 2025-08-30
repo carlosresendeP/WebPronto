@@ -68,7 +68,7 @@ export const CardModel = ({ activeFilter, searchTerm, viewMode, limit }) => {
                                     Ver Modelo de Página<SquareArrowOutUpRight />
                                 </Button>
                             ) : (
-                                <h2>Página não disponível</h2>
+                                <h2>Em breve disponível</h2>
                             )}
                         </div>
                     </div>
